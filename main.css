@@ -28,7 +28,7 @@ a.active {
 }
 main {
     flex: 1 1 auto;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 /* "Hide" checkbox -- moves it off screen*/
