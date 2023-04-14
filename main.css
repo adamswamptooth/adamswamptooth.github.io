@@ -30,6 +30,9 @@ main {
     flex: 1 1 auto;
     padding: 2rem;
 }
+p {
+    width: 900px;
+}
 
 /* "Hide" checkbox -- moves it off screen*/
 #menu-btn {
@@ -55,6 +58,9 @@ main {
     }
     li {
         text-align: center;
+    }
+    p {
+        width: auto;
     }
     .menu-btn {
         display: none;
