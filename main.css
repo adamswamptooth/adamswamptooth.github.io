@@ -2,7 +2,7 @@ body {
     display: flex;
 }
 nav {
-    flex: 0 0 200px;
+    flex: 0 0 250px;
 }
 ul {
     list-style-type: none;
