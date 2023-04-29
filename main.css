@@ -68,6 +68,12 @@ p {
     p {
         width: auto;
     }
+    .home-image {
+        width: 375px;
+    }
+    .press-image {
+        width: 375px;
+    }
     .menu-btn {
         display: none;
     }
