@@ -1,3 +1,3 @@
 # adamswamptooth.github.io
 
-The website for Adam S Forsythe.
+The website for Adam S Forsythe
