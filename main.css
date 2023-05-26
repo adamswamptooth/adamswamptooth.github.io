@@ -39,6 +39,14 @@ p {
     width: 900px;
 }
 
+p.center {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    color: darkgrey;
+}
+
 /* "Hide" checkbox -- moves it off screen*/
 #menu-btn {
     position: absolute;
@@ -49,6 +57,13 @@ p {
 /* Hide hamburger for bigger screens */
 .menu-icon {
     visibility: hidden;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 @media (max-width: 768px) {
@@ -74,6 +89,9 @@ p {
         width: 375px;
     }
     .press-image {
+        width: 375px;
+    }
+    .center {
         width: 375px;
     }
     .menu-btn {
