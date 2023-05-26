@@ -94,6 +94,9 @@ p.center {
     .center {
         width: 375px;
     }
+    p.center {
+        width: 375px;
+    }
     .menu-btn {
         display: none;
     }
