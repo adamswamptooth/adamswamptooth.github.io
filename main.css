@@ -46,6 +46,9 @@ p.center {
     width: 35%;
     color: darkgrey;
 }
+.home-image {
+    margin-top: 0.5em;
+}
 
 /* "Hide" checkbox -- moves it off screen*/
 #menu-btn {
@@ -87,6 +90,7 @@ p.center {
     }
     .home-image {
         width: 375px;
+        margin-top: 0;
     }
     .press-image {
         width: 375px;
