@@ -40,10 +40,10 @@ p {
 }
 
 p.center {
-    text-align: left;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 40%;
     color: darkgrey;
 }
 .home-image {
