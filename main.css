@@ -47,7 +47,8 @@ p.center {
     color: darkgrey;
 }
 .home-image {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin-top: 1em;
 }
 
@@ -90,7 +91,7 @@ p.center {
         width: auto;
     }
     .home-image {
-        width: 375px;
+        max-width: 375px;
         margin-top: 0.5em;
     }
     .press-image {
