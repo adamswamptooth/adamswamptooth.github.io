@@ -47,6 +47,7 @@ p.center {
     color: darkgrey;
 }
 .home-image {
+    width: 1000px;
     margin-top: 1em;
 }
 
