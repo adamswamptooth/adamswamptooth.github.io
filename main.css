@@ -92,6 +92,7 @@ p.center {
     }
     .home-image {
         max-width: 375px;
+        width: auto;
         margin-top: 0.5em;
     }
     .press-image {
