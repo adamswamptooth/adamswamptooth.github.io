@@ -86,6 +86,9 @@ p.center {
     li {
         text-align: center;
     }
+    ul.always-left li {
+        text-align: left;
+      }
     p {
         width: auto;
     }
