@@ -76,6 +76,7 @@ p.center {
     }
     main {
         padding: 0.5rem;
+        width: auto;
     }
     nav {
         flex: 0 0 100%;
@@ -183,5 +184,8 @@ p.center {
     .menu-btn:checked ~ .menu-icon .navicon:before,
     .menu-btn:checked ~ .menu-icon .navicon:after {
         top: 0;
+    }
+    #mc_embed_signup {
+        width: auto !important;
     }
 }
