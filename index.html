@@ -7,6 +7,16 @@
     <title>Adam S. Forsythe - Artist</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <style>
+        .trade-winds-regular {
+            font-family: "Trade Winds", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -35,7 +45,7 @@
 
     <main>
         <img src="images/beast-square.jpg" alt="the beast of goblin combe">
-        <div id="countdown">Loading countdown…</div>
+        <div id="countdown" style="margin-top: 1em;" class="trade-winds-regular">Loading countdown…</div>
         <p><em>Silkscreen print, edition of 30.</em></p>
         <p>Release dates:</p>
         <p><strong>25th April, 2025</strong> Launch night & tier 1 pricing</p>
@@ -66,7 +76,7 @@
           const fmt = n => n.toString().padStart(2, '0');
 
           el.textContent =
-            `${days}d ${fmt(hours)}h ${fmt(mins)}m ${fmt(secs)}s`;
+            `${days} days ${fmt(hours)} hours ${fmt(mins)} minutes ${fmt(secs)}s`;
         }
 
         // kick it off
