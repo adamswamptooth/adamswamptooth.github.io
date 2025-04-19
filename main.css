@@ -1,5 +1,6 @@
 body {
     display: flex;
+    color: #555;
 }
 nav {
     flex: 0 0 250px;
