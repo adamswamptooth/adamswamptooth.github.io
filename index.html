@@ -24,6 +24,7 @@
         }
         #after-link {
             display: none;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -98,7 +99,7 @@
           const fmt = n => String(n).padStart(2, '0');
 
           countdownEl.textContent =
-            `${days}d ${fmt(hours)}h ${fmt(mins)}m ${fmt(secs)}s`;
+            `${days} days ${fmt(hours)} hours ${fmt(mins)} minutes ${fmt(secs)}s`;
         }
 
         updateCountdown();
