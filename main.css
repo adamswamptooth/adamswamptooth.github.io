@@ -71,6 +71,11 @@ p.center {
     width: auto;
 }
 
+#countdown {
+    margin-top: 0.5em;
+    font-size: 3em;
+}
+
 @media (max-width: 768px) {
     body {
         display: block;
@@ -188,5 +193,9 @@ p.center {
     }
     #mc_embed_signup {
         width: auto !important;
+    }
+
+    #countdown {
+        font-size: 2em;
     }
 }
