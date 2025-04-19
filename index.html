@@ -35,12 +35,44 @@
 
     <main>
         <img src="images/beast-square.jpg" alt="the beast of goblin combe">
-        <h1>Latest Print Release</h1>
+        <div id="countdown">Loading countdown…</div>
         <p><em>Silkscreen print, edition of 30.</em></p>
         <p>Release dates:</p>
-        <p><em>25th April, 2025</em>Launch night & tier 1 pricing</p>
-        <p><em>26th April, 2025</em>General release & tier 2 pricing</p>
+        <p><strong>25th April, 2025</strong> Launch night & tier 1 pricing</p>
+        <p><strong>26th April, 2025</strong> General release & tier 2 pricing</p>
     </main>
+
+    <script>
+        // target: 25 April 2025, 16:00 UTC
+        const target = new Date(Date.UTC(2025, 3, 25, 16, 0, 0));
+        const el = document.getElementById('countdown');
+
+        function updateCountdown() {
+          const now = new Date();
+          // difference in ms
+          const diff = target - now;
+          if (diff <= 0) {
+            el.textContent = '🎉 The countdown is over! 🎉';
+            clearInterval(timer);
+            return;
+          }
+          // time units
+          const secs  = Math.floor((diff / 1000) % 60);
+          const mins  = Math.floor((diff / (1000 * 60)) % 60);
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+          // pad single digits with leading zero
+          const fmt = n => n.toString().padStart(2, '0');
+
+          el.textContent =
+            `${days}d ${fmt(hours)}h ${fmt(mins)}m ${fmt(secs)}s`;
+        }
+
+        // kick it off
+        updateCountdown();
+        const timer = setInterval(updateCountdown, 1000);
+      </script>
 
 </body>
 </html>
