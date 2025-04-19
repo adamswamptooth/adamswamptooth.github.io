@@ -19,6 +19,12 @@
         .grey {
             color: #555;
         }
+        #after-message {
+            display: none;
+        }
+        #after-link {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -51,40 +57,50 @@
         <div id="countdown" style="margin-top: 0.5em; font-size: 3em;" class="trade-winds-regular grey">
             Loading countdown…
         </div>
+        <div id="after-message">
+            The Beast of Goblin Combe is now available!
+        </div>
         <p class="grey"><em>Silkscreen print, edition of 30.</em></p>
         <p class="grey">Release dates:</p>
         <p class="grey"><strong>25th April, 2025</strong> Launch night & tier 1 pricing</p>
         <p class="grey"><strong>26th April, 2025</strong> General release & tier 2 pricing</p>
+        <p id="after-link">
+            <a href="https://www.bicep-press.com/adam-forsythe-print-edition">
+                <strong>Buy Now</strong>
+            </a>
+        </p>
     </main>
 
     <script>
-        // target: 25 April 2025, 16:00 UTC
         const target = new Date(Date.UTC(2025, 3, 25, 16, 0, 0));
-        const el = document.getElementById('countdown');
+        const countdownEl = document.getElementById('countdown');
+        const afterEl     = document.getElementById('after-message');
+        const afterLink   = document.getElementById('after-link');
 
         function updateCountdown() {
-          const now = new Date();
-          // difference in ms
+          const now  = new Date();
           const diff = target - now;
+
           if (diff <= 0) {
-            el.textContent = '🎉 The countdown is over! 🎉';
+            // time's up!
             clearInterval(timer);
+            countdownEl.style.display = 'none';
+            afterEl.style.display     = 'block';
+            afterLink.style.display = 'block';
             return;
           }
-          // time units
+
           const secs  = Math.floor((diff / 1000) % 60);
           const mins  = Math.floor((diff / (1000 * 60)) % 60);
           const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
           const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-          // pad single digits with leading zero
-          const fmt = n => n.toString().padStart(2, '0');
+          const fmt = n => String(n).padStart(2, '0');
 
-          el.textContent =
-            `${days} days ${fmt(hours)} hours ${fmt(mins)} minutes ${fmt(secs)}s`;
+          countdownEl.textContent =
+            `${days}d ${fmt(hours)}h ${fmt(mins)}m ${fmt(secs)}s`;
         }
 
-        // kick it off
         updateCountdown();
         const timer = setInterval(updateCountdown, 1000);
       </script>
