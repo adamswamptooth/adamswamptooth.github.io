@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Loveland">
-    <title>Adam S Forsythe - "Loveland", 2023</title>
+    <meta name="description" content="{{ description }}">
+    <title>Adam S Forsythe - "{{ title }}", {{ year }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="../main.css">
 </head>
 <body>
     <main>
-        <img src="frog.jpeg" alt="Loveland" class="center" />
-        <p class="center">"Loveland", 2023. Acrylic on canvas.
-            60 x 80 cm</p>
+        <img src="{{ image }}" alt="{{ title }}" class="center" />
+        <p class="center">"{{ title }}", {{ year }}. {{ medium }}.
+            {% if dimensions %}{{ dimensions }}{% endif %}</p>
     </main>
 </body>
 </html>

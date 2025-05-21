@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block meta %}{% endblock %}
+    <title>Adam S. Forsythe - {% block title %}Artist{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ static('main.css') }}">
+    {% block extra_styles %}{% endblock %}
+</head>
+<body>
+    {% block header %}
+    <header>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon" />
+        </label>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a {% if active_page == 'home' %}class="main active" aria-current="page" href="#"{% else %}href="/"{% endif %}>Adam S. Forsythe</a>
+                </li>
+                <li>
+                    <a {% if active_page == 'work' %}class="main active" aria-current="page" href="#"{% else %}href="/work"{% endif %}>selected work</a>
+                </li>
+                <li>
+                    <a {% if active_page == 'about' %}class="main active" aria-current="page" href="#"{% else %}href="/about"{% endif %}>about</a>
+                </li>
+                <li>
+                    <a {% if active_page == 'contact' %}class="main active" aria-current="page" href="#"{% else %}href="/contact"{% endif %}>contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    {% endblock %}
+
+    <main{% block main_attributes %}{% endblock %}>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block footer %}
+    {% if analytics is not defined or analytics %}
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cd7b0ae5db8f402c9b3ef60a68af4375"}'></script><!-- End Cloudflare Web Analytics -->
+    {% endif %}
+    {% endblock %}
+</body>
+</html>

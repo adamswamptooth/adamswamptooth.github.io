@@ -1,44 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Adam S. Forsythe - About</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    
-</head>
-<body>
-    
-    <header>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-            <span class="navicon" />
-        </label>
+{% extends "base.html" %}
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="/">Adam S. Forsythe</a>
-                </li>
-                <li>
-                    <a href="/work">selected work</a>
-                </li>
-                <li>
-                    <a class="main active" aria-current="page" href="#">about</a>
-                </li>
-                <li>
-                    <a href="/contact">contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
+{% block title %}About{% endblock %}
 
-    <mainstyle="width: auto;">
-        
-<img src="images/portrait2.jpeg" alt="A portrait of Adam Forsythe in his studio. Adam has a ginger beard, a white t-shirt and khaki pants, with a blue beanie on his head, sitting on a bench painting a painting in a green color, against a white background, with studio lighting" class="press-image" width="900" />
+{% set active_page = 'about' %}
+
+{% block main_attributes %}style="width: auto;"{% endblock %}
+
+{% block content %}
+<img src="{{ static('images/portrait2.jpeg') }}" alt="A portrait of Adam Forsythe in his studio. Adam has a ginger beard, a white t-shirt and khaki pants, with a blue beanie on his head, sitting on a bench painting a painting in a green color, against a white background, with studio lighting" class="press-image" width="900" />
 <p>
     Adam S. Forsythe is a painter whose work explores strange worlds filled with cryptids, monsters, and mythical beings. His art blends vibrant colors, playful imagery, and a touch of humor, inviting viewers to connect with creatures from the edges of folklore and imagination.
 </p>
@@ -78,13 +47,4 @@
         <a href="https://www.huntedprojects.com/interviews/adamsforsythe">hunted projects</a>
     </li>
 </ul>
-
-    </main>
-
-    
-    
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cd7b0ae5db8f402c9b3ef60a68af4375"}'></script><!-- End Cloudflare Web Analytics -->
-    
-    
-</body>
-</html>
+{% endblock %}

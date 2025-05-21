@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block meta %}
+<meta name="description" content="Adam S Forsythe is an artist from Bristol, UK.">
+{% endblock %}
+
+{% set active_page = 'work' %}
+
+{% block content %}
+{% for artwork in artworks %}
+    {% if artwork.url %}
+    <a href="{{ static('images/' ~ artwork.url) }}">
+        <img src="{{ static('images/' ~ artwork.image) }}" alt="{{ artwork.alt }}" class="home-image" width="{{ artwork.width }}">
+    </a>
+    {% else %}
+    <img src="{{ static('images/' ~ artwork.image) }}" alt="{{ artwork.alt }}" class="home-image" width="{{ artwork.width }}">
+    {% endif %}
+{% endfor %}
+{% endblock %}

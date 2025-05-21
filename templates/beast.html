@@ -1,52 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta name="description" content="Limited Edition Print by Adam S. Forsythe">
+{% extends "base.html" %}
 
-    <title>Adam S. Forsythe - The Beast of Goblin Combe</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    
+{% block title %}The Beast of Goblin Combe{% endblock %}
+
+{% block meta %}
+<meta name="description" content="Limited Edition Print by Adam S. Forsythe">
+{% endblock %}
+
+{% block extra_styles %}
 <style>
     .text-link {
         text-decoration: underline;
     }
 </style>
+{% endblock %}
 
-</head>
-<body>
-    
-    <header>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-            <span class="navicon" />
-        </label>
+{% set active_page = 'home' %}
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a class="main active" aria-current="page" href="#">Adam S. Forsythe</a>
-                </li>
-                <li>
-                    <a href="/work">selected work</a>
-                </li>
-                <li>
-                    <a href="/about">about</a>
-                </li>
-                <li>
-                    <a href="/contact">contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-
-    <main>
-        
-<img src="images/beast-square.jpg" alt="the beast of goblin combe">
+{% block content %}
+<img src="{{ static('images/beast-square.jpg') }}" alt="the beast of goblin combe">
 <h1>The Beast of Goblin Combe</h1>
 <p><em>Limited Edition Print by Adam S. Forsythe</em></p>
 <p>Experience something rare, meaningful, and truly special.</p>
@@ -66,16 +37,7 @@
     <button class="pure-button pure-button-primary">Add to Calendar</button>
 </a>
 <p>Or copy the link below to add it manually:</p>
-<p><a href="release.ics" class="text-link">reminder.ics</a></p>
+<p><a href="{{ static('release.ics') }}" class="text-link">reminder.ics</a></p>
 <p>For more information, visit <a href="https://www.biceppress.com" class="text-link" target="_blank">Bicep Press</a>.</p>
 <p>Follow Adam S. Forsythe on <a href="https://www.instagram.com/adamsforsythe/" target="_blank" class="text-link">Instagram</a> for updates and sneak peeks of the print.</p>
-
-    </main>
-
-    
-    
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cd7b0ae5db8f402c9b3ef60a68af4375"}'></script><!-- End Cloudflare Web Analytics -->
-    
-    
-</body>
-</html>
+{% endblock %}
