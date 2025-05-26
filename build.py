@@ -198,6 +198,7 @@ pages = [
     {"template": "work.html", "output": "work.html", "context": {"artworks": artworks}},
     {"template": "contact.html", "output": "contact.html", "context": {}},
     {"template": "beast.html", "output": "beast.html", "context": {}},
+    {"template": "links.html", "output": "links.html", "context": {}},
     {
         "template": "available.html",
         "output": "available.html",
