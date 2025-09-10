@@ -5,6 +5,10 @@ body {
 nav {
     flex: 0 0 250px;
 }
+video {
+    width: 100%;
+    height: auto;
+}
 ul {
     list-style-type: none;
     margin-top: 1.2rem;
@@ -50,6 +54,10 @@ p.center {
 .home-image {
     max-width: 1000px;
     margin-top: 1em;
+}
+
+#about-video {
+    max-width: 832px;
 }
 
 /* "Hide" checkbox -- moves it off screen*/
