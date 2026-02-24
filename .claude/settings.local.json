@@ -6,5 +6,6 @@
       "Bash(./venv/bin/python:*)"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": false
 }
