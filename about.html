@@ -1,70 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Adam S. Forsythe - About</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artist Name | About</title>
+  <meta name="description" content="Artist statement and biography.">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    
-    <header>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-            <span class="navicon" />
-        </label>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="menu-overlay" id="mobile-menu" data-menu-overlay aria-label="Mobile">
+      <ul>
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="/">Adam S. Forsythe</a>
-                </li>
-                <li>
-                    <a href="/work">selected work</a>
-                </li>
-                <li>
-                    <a class="main active" aria-current="page" href="#">about</a>
-                </li>
-                <li>
-                    <a href="/cv">cv</a>
-                </li>
-                <li>
-                    <a href="/contact">contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
+  <main class="main-content">
+    <section class="about-grid">
+      <div class="page-copy">
+        <h1>About</h1>
+        <p>My practice studies how memory settles into surface. Through layered pigment and restrained mark-making, I build paintings that hold traces of weather, architecture, and time.</p>
+        <p>I work slowly, often returning to a canvas across several months. Repetition and erasure are central to the process; each work is treated as a place where attention accumulates.</p>
+        <p>Recent works focus on quiet shifts in light and scale, asking how perception changes when viewed at close distance versus across a room.</p>
 
-    <main style="width: auto;">
-        
-<video autoplay muted loop playsinline id="about-video">
-  <source src="images/stroll.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<p>
-    There is a place that is not a place. It waits in the half-light of memory. We called it The Crooked Fen.
-</p>
-<p>
-    In this place, creatures gather: some are borrowed from forgotten folktales, others were never written down but have always been here. They wear masks, shed skins, trade names. They are comic and tragic, ridiculous and terrifying, often at the same time.
-</p>
-<p>
-    No map can hold it. It grows in fragments — a painting, a mask, a sound, a fleeting rumour. Each artefact is a doorway, but none open to the same place twice.
-</p>
-<p>
-    To enter this place is to accept its contradictions: that humour and horror are neighbours, that monsters can be familiar, that strangeness might feel like home.
-</p>
+        <h2>Bio</h2>
+        <p>Artist Name (b. 1988) is a contemporary fine artist based in London. Their work has been exhibited in the UK and Europe, and is held in private and institutional collections.</p>
+      </div>
+      <div>
+        <img src="assets/images/placeholder-portrait.svg" alt="Placeholder for artist portrait">
+      </div>
+    </section>
+  </main>
 
-
-    </main>
-
-    
-    
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cd7b0ae5db8f402c9b3ef60a68af4375"}'></script><!-- End Cloudflare Web Analytics -->
-    
-    
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

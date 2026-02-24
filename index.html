@@ -1,84 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<meta name="description" content="Adam S Forsythe is an artist from Bristol, UK.">
-
-    <title>Adam S. Forsythe - Artist</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
-<style>
-    .trade-winds-regular {
-        font-family: "Trade Winds", system-ui;
-        font-weight: 400;
-        font-style: normal;
-    }
-    .grey {
-        color: #555;
-    }
-    #after-message {
-        display: none;
-    }
-    #after-link {
-        display: none;
-        text-decoration: underline;
-    }
-</style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artist Name | Work</title>
+  <meta name="description" content="Portfolio website for a contemporary fine artist.">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    
-    <header>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-            <span class="navicon" />
-        </label>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="menu-overlay" id="mobile-menu" data-menu-overlay aria-label="Mobile">
+      <ul>
+        <li><a href="index.html" aria-current="page">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a class="main active" aria-current="page" href="#">Adam S. Forsythe</a>
-                </li>
-                <li>
-                    <a href="/work">selected work</a>
-                </li>
-                <li>
-                    <a href="/about">about</a>
-                </li>
-                <li>
-                    <a href="/cv">cv</a>
-                </li>
-                <li>
-                    <a href="/contact">contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
+  <main class="main-content">
+    <h1 class="sr-only">Work</h1>
+    <figure class="hero-work">
+      <img src="assets/images/placeholder-artwork.svg" alt="Placeholder for featured artwork">
+      <figcaption>
+        <strong>Untitled (Placeholder)</strong>, 2026<br>
+        <span class="meta-line">Pigment on linen, 180 x 240 cm</span>
+      </figcaption>
+    </figure>
+    <a class="simple-link" href="works.html">View Selected Works</a>
+  </main>
 
-    <main >
-        
-<img src="images/install_1.jpg" alt="hunted projects install" class="home-image">
-<img src="images/install_2.jpg" alt="paintings installed at hunted projects" class="home-image">
-<img src="images/install_3.jpg" alt="hunted projects install" class="home-image">
-<img src="images/gallery1.jpeg" alt="paintings installed in a gallery" class="home-image" />
-<img src="images/gallery2.jpeg" alt="paintings installed in a gallery" class="home-image" />
-<img src="images/gallery3.jpeg" alt="paintings installed in a gallery" class="home-image" />
-<img src="images/gallery4.jpeg" alt="paintings installed in a gallery" class="home-image" />
-<img src="images/098A8328.jpeg" alt="work on paper in better go south gallery" class="home-image" />
-
-    </main>
-
-    
-    
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cd7b0ae5db8f402c9b3ef60a68af4375"}'></script><!-- End Cloudflare Web Analytics -->
-    
-    
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
