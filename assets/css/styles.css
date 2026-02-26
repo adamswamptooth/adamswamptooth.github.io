@@ -191,6 +191,11 @@ figcaption {
   background: var(--placeholder);
 }
 
+.artwork-layout .artwork-image {
+  width: min(600px, 100%);
+  max-width: 100%;
+}
+
 .artwork-text {
   margin-top: 1.5rem;
   max-width: var(--reading-width);
