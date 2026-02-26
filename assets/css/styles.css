@@ -153,7 +153,7 @@ figcaption {
 .works-grid {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
@@ -187,7 +187,6 @@ figcaption {
 }
 
 .artwork-layout img {
-  aspect-ratio: 16 / 10;
   object-fit: cover;
   background: var(--placeholder);
 }
@@ -322,5 +321,11 @@ figcaption {
 
   .about-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 841px) {
+  .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
