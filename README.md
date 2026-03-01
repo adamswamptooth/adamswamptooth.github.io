@@ -1,6 +1,6 @@
-# Contemporary Fine Artist Portfolio (Static Site)
+# contemporary Artist Portfolio (Static Site)
 
-This repository contains a minimal, image-led portfolio website designed for a contemporary fine artist. It is built as plain HTML/CSS with a tiny amount of JavaScript for mobile navigation.
+This repository contains a minimal, image-led portfolio website designed for a contemporary artist. It is built as plain HTML/CSS with a tiny amount of JavaScript for mobile navigation.
 
 ## Design Intent
 
