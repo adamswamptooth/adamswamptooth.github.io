@@ -243,6 +243,17 @@ figcaption {
   background: var(--placeholder);
 }
 
+.cv-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 460px) minmax(420px, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.cv-image img {
+  background: var(--placeholder);
+}
+
 .cv-list {
   list-style: none;
   padding: 0;
@@ -326,6 +337,14 @@ figcaption {
 
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cv-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-image {
+    display: none;
   }
 }
 
